@@ -1,0 +1,16 @@
+# .gitignore
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Compiled files
+dist/
+build/
