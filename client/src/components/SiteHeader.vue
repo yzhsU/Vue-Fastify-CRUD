@@ -33,7 +33,8 @@ img {
 }
 
 nav {
-    display: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-right {
@@ -45,11 +46,13 @@ nav {
     margin-left: 1rem;
 }
 
-@media (max-width: 1000px) {
-    nav {
+@media only screen and (min-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .list-icon {
     display: block;
-    width: 100%;
-    text-align: right;
-    }
+  }
 }
 </style>

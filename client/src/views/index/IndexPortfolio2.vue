@@ -19,22 +19,22 @@ export default {
         {
           title: 'Blending',
           desc: '깊은 바디감의 진한 “나이트”',
-          icon: require('./images/portfolio/icon1.png')
+          icon: '/images/portfolio/icon1.png'
         },
         {
           title: 'Sunset',
           desc: '부드럽고 산미가 느껴지는 “썬셋”',
-          icon: require('./images/portfolio/icon2.png')
+          icon: '/images/portfolio/icon2.png'
         },
         {
           title: 'Decaf',
           desc: '“디카페인” 세가지 스타일의 고품질 스폐셜 원두를 사용합니다.',
-          icon: require('./images/portfolio/icon3.png')
+          icon: '/images/portfolio/icon3.png'
         },
         {
           title: 'Blending',
           desc: '깊은 바디감의 진한 “나이트”',
-          icon: require('./images/portfolio/icon4.png')
+          icon: '/images/portfolio/icon4.png'
         }
       ]
     }

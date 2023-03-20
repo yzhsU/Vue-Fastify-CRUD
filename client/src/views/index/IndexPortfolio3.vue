@@ -19,27 +19,27 @@ export default {
     return {
       cards: [
         {
-          img: require('./images/portfolio/card1.jpg'),
+          img: '/images/portfolio/card1.jpg',
           text: 'Card 1'
         },
         {
-          img: require('./images/portfolio/card2.jpg'),
+          img: '/images/portfolio/card2.jpg',
           text: 'Card 2'
         },
         {
-          img: require('./images/portfolio/card3.jpg'),
+          img: '/images/portfolio/card3.jpg',
           text: 'Card 3'
         },
         {
-          img: require('./images/portfolio/card4.jpg'),
+          img: '/images/portfolio/card4.jpg',
           text: 'Card 4'
         },
         {
-          img: require('./images/portfolio/card5.jpg'),
+          img: '/images/portfolio/card5.jpg',
           text: 'Card 5'
         },
         {
-          img: require('./images/portfolio/card6.jpg'),
+          img: '/images/portfolio/card6.jpg',
           text: 'Card 6'
         }
       ]

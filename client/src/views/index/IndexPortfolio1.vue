@@ -1,21 +1,21 @@
 <template>
-    <div>
-      <img :src="currentImage" />
-      <div class="controls">
-        <div class="left-arrow" @click="previousImage">&lt;</div>
-        <div class="right-arrow" @click="nextImage">&gt;</div>
-      </div>
+  <div>
+    <img :src="currentImage" />
+    <div class="controls">
+      <div class="left-arrow" @click="previousImage">&lt;</div>
+      <div class="right-arrow" @click="nextImage">&gt;</div>
     </div>
-  </template>
+  </div>
+</template>
 
 <script>
 export default {
   data () {
     return {
       images: [
-        require('./images/portfolio/visual/image1.jpg'),
-        require('./images/portfolio/visual/image2.jpg'),
-        require('.\/images/portfolio/visual/image3.jpg')
+        '/images/portfolio/visual/image1.jpg',
+        '/images/portfolio/visual/image2.jpg',
+        '/images/portfolio/visual/image3.jpg'
       ],
       currentIndex: 0
     }
@@ -44,23 +44,23 @@ export default {
 
 <style>
 .controls {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .left-arrow,
 .right-arrow {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .left-arrow {
-position: absolute;
-left: 1rem;
+  position: absolute;
+  left: 1rem;
 }
 
 .right-arrow {
-position: absolute;
-right: 1rem;
+  position: absolute;
+  right: 1rem;
 }
 </style>
