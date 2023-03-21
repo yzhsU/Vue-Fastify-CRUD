@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import "icons";
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 테두리의 두께가 넓이를 차지하지 않도록*/
+* {
+  box-sizing: border-box;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.blue {
+  background-color: skyblue;
+}
+
+.yellow {
+  background-color: lightyellow;
+}
+
+.red {
+  background-color: lightcoral;
+}
+
+.green{
+  background-color: #90EE90;
 }

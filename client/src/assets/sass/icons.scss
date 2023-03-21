@@ -1,0 +1,8 @@
+.fa-naver:before {
+    font-family: "Naver Icon"; /* your custom font family /
+    content: "\e900"; / unicode value of your Naver icon /
+    font-size: 1.5rem; / adjust the size as needed */
+    font-family: Arial;
+    content: "N";
+    display: inline-block;
+}
