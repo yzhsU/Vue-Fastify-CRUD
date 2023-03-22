@@ -112,6 +112,7 @@
 }
 
 .sub-menu {
+  z-index: 1;
   display: none;
   position: absolute;
   top: 100%;
