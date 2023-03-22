@@ -57,24 +57,22 @@ export default {
   position: relative;
   height: 100%;
   overflow: hidden;
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  .left-arrow {
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+  }
 }
 
-.controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-
-.left-arrow {
-  position: absolute;
-  left: 1rem;
-  cursor: pointer;
-}
-
-.right-arrow {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
-}
 </style>

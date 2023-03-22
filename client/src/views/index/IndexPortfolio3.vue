@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="card-container">
       <div class="row">
         <div class="col-4" v-for="(card, index) in cards" :key="index">
           <div class="card">
@@ -48,14 +48,17 @@ export default {
 }
 </script>
 
-  <style scoped>
-  .card {
-    margin: 1rem;
-  }
-
-  .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  <style scoped lang="scss">
+  .card-container{
+    background-color: cadetblue;
+    padding: 6rem 1rem;
+    .card {
+      margin: 1rem;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
   }
   </style>
