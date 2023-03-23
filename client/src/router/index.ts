@@ -7,6 +7,8 @@
 // Import the necessary components and modules from vue-router
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
+import adminRoutes from './admin'
+
 // Import the HomeView component
 import HomeView from '../views/HomeView.vue'
 
@@ -36,6 +38,14 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   // Pass the defined routes to the router
   routes
+})
+
+router.addRoute({
+  path: '/admin',
+  meta: {
+    requiresAuth: true // 예를 들어, 관리자 전용 페이지는 로그인이 필요할 수 있습니다.
+  },
+  children: adminRoutes
 })
 
 // Export the router instance

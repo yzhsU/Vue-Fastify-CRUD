@@ -7,5 +7,5 @@ import './assets/sass/global.scss'
 
 const app = createApp(App)
 app.use(store)
-app.use(router)
+app.use(router) // 라우터 등록
 app.mount('#app')
