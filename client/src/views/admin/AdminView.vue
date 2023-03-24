@@ -9,19 +9,19 @@ File Name: AdminView.vue
     <main>
       <AdminMain />
     </main>
-    <SiteFooter />
+    <!-- <SiteFooter /> -->
   </div>
 </template>
 
 <script lang="ts">
 import AdminHeader from '@/components/admin/AdminHeader.vue'
-import AdminMain from '@/views/admin/index/AdminIndexMain.vue'
-import SiteFooter from '@/components/SiteFooter.vue'
+import AdminMain from '@/views/admin/index/AdminIndexList.vue'
+//import SiteFooter from '@/components/SiteFooter.vue'
 export default {
   components: {
     AdminHeader,
-    AdminMain,
-    SiteFooter
+    AdminMain
+    //SiteFooter
   }
 }
 </script>
