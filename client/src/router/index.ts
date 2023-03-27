@@ -21,14 +21,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     // The component to be displayed for the home route
     component: HomeView
-  },
-  {
-    // The path for the about route
-    path: '/about',
-    // The name for the about route
-    name: 'about',
-    // The component to be displayed for the about route, lazy loaded using code splitting
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
 ]
 

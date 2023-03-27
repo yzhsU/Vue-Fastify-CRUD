@@ -4,15 +4,33 @@
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" v-model="name" required>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          v-model="name"
+          required
+        />
       </div>
       <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" v-model="email" required>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          v-model="email"
+          required
+        />
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" v-model="password" required>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          v-model="password"
+          required
+        />
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -20,15 +38,15 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import axios from 'axios';
+import { ref } from 'vue'
+import axios from 'axios'
 
 export default {
-  name: 'AdminMemberCreate',
+  name: 'CreateMember',
   setup() {
-    const name = ref('');
-    const email = ref('');
-    const password = ref('');
+    const name = ref('')
+    const email = ref('')
+    const password = ref('')
 
     const submitForm = async () => {
       try {
@@ -36,22 +54,22 @@ export default {
           name: name.value,
           email: email.value,
           password: password.value
-        });
-        alert('Member created!');
-        name.value = '';
-        email.value = '';
-        password.value = '';
+        })
+        alert('Member created!')
+        name.value = ''
+        email.value = ''
+        password.value = ''
       } catch (error) {
-        alert('Failed to create member');
+        alert('Failed to create member')
       }
-    };
+    }
 
     return {
       name,
       email,
       password,
       submitForm
-    };
+    }
   }
-};
+}
 </script>

@@ -1,6 +1,14 @@
 <template>
-  <router-view/>
+  <div id="app">
+    <router-view />
+    <ModalsContainer :containerClass="'vfm__container'"/>
+  </div>
 </template>
+
+<script setup lang="ts">
+import { ModalsContainer } from 'vue-final-modal'
+
+</script>
 
 <style lang="scss">
 #app {
@@ -22,5 +30,13 @@ nav {
       color: #42b983;
     }
   }
+}
+
+.vfm__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 </style>

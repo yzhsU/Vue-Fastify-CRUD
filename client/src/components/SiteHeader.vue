@@ -48,7 +48,7 @@
               </div>
             </li>
             <li>
-              <a href="#">회원메뉴</a>
+              <a href="#" @click="openLogInPopup">회원메뉴</a>
             </li>
           </ul>
         </nav>
@@ -68,6 +68,41 @@
   </header>
 </template>
 
+<script>
+
+import { useModal } from 'vue-final-modal'
+import LogIn from '@/components/LogIn.vue'
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'SiteHeader',
+  components: {
+    // ...
+  },
+  data() {
+    return {
+      // ...
+    }
+  },
+  setup() {
+    const { open, close } = useModal({
+      component: LogIn,
+      slots: {
+        default: '<p>The content of the modal</p>'
+      }
+    })
+
+    return {
+      open
+    }
+  },
+  methods: {
+    openLogInPopup(){
+      this.open()
+    }
+  }
+})
+</script>
 <style lang="scss">
 .header-container {
   display: flex;
@@ -194,4 +229,6 @@
     display: block;
   }
 }
+
+
 </style>

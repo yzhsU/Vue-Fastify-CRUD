@@ -7,7 +7,7 @@ File Name: AdminView.vue
   <div>
     <AdminHeader />
     <main>
-      <AdminMain />
+      <router-view />
     </main>
     <!-- <SiteFooter /> -->
   </div>
@@ -15,13 +15,13 @@ File Name: AdminView.vue
 
 <script lang="ts">
 import AdminHeader from '@/components/admin/AdminHeader.vue'
-import AdminMain from '@/views/admin/index/AdminIndexList.vue'
 //import SiteFooter from '@/components/SiteFooter.vue'
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'AdminView',
   components: {
-    AdminHeader,
-    AdminMain
-    //SiteFooter
+    AdminHeader
   }
-}
+})
 </script>

@@ -8,7 +8,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 // Import the AdminView component
-import AdminView from '../../views/admin/AdminView.vue'
+import AdminView from '@/views/admin/AdminView.vue'
+import AdminIndexList from '@/views/admin/index/AdminIndexList.vue'
+
+// Import the routes for the member section of the application
+import memberRoutes from './member';
 
 // Define the routes for the admin section of the application
 const routes: Array<RouteRecordRaw> = [
@@ -18,7 +22,15 @@ const routes: Array<RouteRecordRaw> = [
     // The name for the admin route
     name: 'admin',
     // The component to be displayed for the admin route
-    component: AdminView
+    component: AdminView,
+    children: [
+      {
+        path: '',
+        component: AdminIndexList
+      },
+      // Add the member routes to the admin routes
+      ...memberRoutes
+    ]
   }
 ]
 
