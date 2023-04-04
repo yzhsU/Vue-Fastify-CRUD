@@ -7,7 +7,7 @@ File Name: AdminHeader.vue
     <header>
       <div class="header-container">
         <div class="logo-container">
-          <img class="logo" src="images/logo.png" />
+          <img class="logo" src="/images/logo.png" />
         </div>
         <div class="header-right-div">
           <nav>

@@ -1,32 +1,32 @@
 <template>
   <div>
-    <SiteHeader />
+    <Header />
     <main>
       <Portfolio1 />
       <Portfolio2 />
       <Portfolio3 />
       <Portfolio4 />
     </main>
-    <SiteFooter />
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
-import SiteHeader from '@/components/SiteHeader.vue'
+import Header from '@/components/Header.vue'
 import Portfolio1 from '@/views/index/IndexPortfolio1.vue'
 import Portfolio2 from '@/views/index/IndexPortfolio2.vue'
 import Portfolio3 from '@/views/index/IndexPortfolio3.vue'
 import Portfolio4 from '@/views/index/IndexPortfolio4.vue'
-import SiteFooter from '@/components/SiteFooter.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
-    SiteHeader,
+    Header,
     Portfolio1,
     Portfolio2,
     Portfolio3,
     Portfolio4,
-    SiteFooter
+    Footer
   }
 }
 </script>

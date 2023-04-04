@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: 'SiteFooter',
+  name: 'Footer',
   data () {
     return {
       company: '킨더플레이룸',

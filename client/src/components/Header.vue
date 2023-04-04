@@ -48,7 +48,7 @@
               </div>
             </li>
             <li>
-              <a href="#" @click="openLogInPopup">회원메뉴</a>
+              <a href="#" @click="showModal">회원메뉴</a>
             </li>
           </ul>
         </nav>
@@ -65,44 +65,39 @@
         </div>
       </div>
     </div>
+    <!-- include the modal component with the modalId prop -->
+    <LogIn v-if="modalVisible" @closeModal="closeModal" />
   </header>
 </template>
 
 <script>
-
-import { useModal } from 'vue-final-modal'
-import LogIn from '@/components/LogIn.vue'
 import { defineComponent } from 'vue'
+import LogIn from '@/components/LogIn.vue'
 
 export default defineComponent({
   name: 'SiteHeader',
   components: {
-    // ...
+    LogIn
   },
   data() {
     return {
-      // ...
-    }
-  },
-  setup() {
-    const { open, close } = useModal({
-      component: LogIn,
-      slots: {
-        default: '<p>The content of the modal</p>'
-      }
-    })
-
-    return {
-      open
+      modalVisible: false
     }
   },
   methods: {
-    openLogInPopup(){
-      this.open()
+    openModal() {
+      this.modalVisible = true
+    },
+    closeModal() {
+      this.modalVisible = false
+    },
+    showModal() {
+      this.modalVisible = true
     }
   }
 })
 </script>
+
 <style lang="scss">
 .header-container {
   display: flex;
@@ -229,6 +224,4 @@ export default defineComponent({
     display: block;
   }
 }
-
-
 </style>

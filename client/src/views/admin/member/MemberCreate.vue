@@ -1,6 +1,6 @@
 <template>
-  <div class="create-member-container">
-    <h1>Create Member</h1>
+  <div class="member-create-container">
+    <h1>MemberCreate</h1>
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name</label>
@@ -38,11 +38,10 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import axios from 'axios'
+import { defineComponent, ref } from 'vue'
 
-export default {
-  name: 'CreateMember',
+export default defineComponent({
+  name: 'MemberCreate',
   setup() {
     const name = ref('')
     const email = ref('')
@@ -50,7 +49,7 @@ export default {
 
     const submitForm = async () => {
       try {
-        await axios.post('/api/admin/member', {
+        await this.$axios.post('/api/members', {
           name: name.value,
           email: email.value,
           password: password.value
@@ -71,5 +70,5 @@ export default {
       submitForm
     }
   }
-}
+});
 </script>

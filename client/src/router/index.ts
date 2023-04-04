@@ -33,7 +33,7 @@ const router = createRouter({
 })
 
 router.addRoute({
-  path: '/admin',
+  path: '/api/admin',
   meta: {
     requiresAuth: true // 예를 들어, 관리자 전용 페이지는 로그인이 필요할 수 있습니다.
   },

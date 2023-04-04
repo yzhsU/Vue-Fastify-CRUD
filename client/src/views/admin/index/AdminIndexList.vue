@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import AdminIndexFooter from './AdminIndexFooter.vue'
+import AdminIndexFooter from './AdminFooter.vue'
 import AdminIndexPortfolio1 from './AdminIndexPortfolio1.vue'
 import AdminIndexPortfolio2 from './AdminIndexPortfolio2.vue'
 import AdminIndexPortfolio3 from './AdminIndexPortfolio3.vue'

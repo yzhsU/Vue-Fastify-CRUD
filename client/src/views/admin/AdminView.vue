@@ -15,7 +15,7 @@ File Name: AdminView.vue
 
 <script lang="ts">
 import AdminHeader from '@/components/admin/AdminHeader.vue'
-//import SiteFooter from '@/components/SiteFooter.vue'
+//import Footer from '@/components/Footer.vue'
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -24,4 +24,5 @@ export default defineComponent({
     AdminHeader
   }
 })
+
 </script>

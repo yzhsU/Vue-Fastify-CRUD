@@ -12,13 +12,13 @@ import AdminView from '@/views/admin/AdminView.vue'
 import AdminIndexList from '@/views/admin/index/AdminIndexList.vue'
 
 // Import the routes for the member section of the application
-import memberRoutes from './member';
+import memberRoutes from './members';
 
 // Define the routes for the admin section of the application
 const routes: Array<RouteRecordRaw> = [
   {
     // The path for the admin route
-    path: '/admin',
+    path: '/api/admin',
     // The name for the admin route
     name: 'admin',
     // The component to be displayed for the admin route

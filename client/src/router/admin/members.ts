@@ -8,17 +8,26 @@
 import { RouteRecordRaw } from 'vue-router';
 
 // Import the AdminView component
-import CreateMember from '@/views/admin/member/CreateMember.vue'
+import MemberCreate from '@/views/admin/member/MemberCreate.vue'
+import MemberList from '@/views/admin/member/MemberList.vue'
 
 // Define the routes for the admin section of the application
 const memberRoutes: Array<RouteRecordRaw> = [
   {
     // The path for the member create route
-    path: '/admin/member/create',
+    path: '/api/members/create',
     // The name for the member create route
     name: 'member-create-page',
     // The component to be displayed for the member create route
-    component: CreateMember
+    component: MemberCreate
+  },
+  {
+    // The path for the member create route
+    path: '/api/members',
+    // The name for the member create route
+    name: 'member-list-page',
+    // The component to be displayed for the member create route
+    component: MemberList
   }
 ];
 

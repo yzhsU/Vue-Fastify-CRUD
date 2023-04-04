@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: "AdminIndexFooter",
+  name: "AdminFooter",
   data() {
     return {
       company: "킨더플레이룸",
